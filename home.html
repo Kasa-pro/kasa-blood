@@ -24,8 +24,6 @@
     <a href="#">forget password?</a>
     <a href="signup.html">Sign Up</a>
   </div>
-
-  <!-- 💻 JavaScript at the end -->
   <script>
   document.querySelector("form").addEventListener("submit", function(e) {
     e.preventDefault();
@@ -35,8 +33,6 @@
 
     localStorage.setItem("loginUser", username);
     localStorage.setItem("loginPass", password);
-
-    // 💖 Corrected toLowerCase() here
     if (username.toLowerCase() === "kasamuthu" && password === "harshini") {
       window.location.href = "index.html";
     } else {
