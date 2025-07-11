@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-form">
+    <div class="container">
+      <form>
+        <h1><center>Login page</center></h1>
+        <hr>
+        <input type="text" placeholder="User name Or Email">
+        <br><br>
+        <input type="password" placeholder="password">
+        <br><br>
+        <input type="checkbox" onclick="togglePassword()"> Show Password
+        <br>
+        <button type="submit">submit</button>
+      </form>
+    </div>
+    <a href="#">forget password?</a>
+    <a href="signup.html">Sign Up</a>
+  </div>
+
+  <!-- 💻 JavaScript at the end -->
+  <script>
+  document.querySelector("form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    let username = document.querySelector('input[type="text"]').value.trim();
+    let password = document.querySelector('input[type="password"]').value.trim();
+
+    localStorage.setItem("loginUser", username);
+    localStorage.setItem("loginPass", password);
+
+    // 💖 Corrected toLowerCase() here
+    if (username.toLowerCase() === "kasamuthu" && password === "harshini") {
+      window.location.href = "index.html";
+    } else {
+      alert("Oops! Username & Password must match!");
+    }
+  });
+
+  function togglePassword() {
+    let pwd = document.querySelector('input[type="password"]');
+    pwd.type = pwd.type === "password" ? "text" : "password";
+  }
+</script>
+</body>
+</html> 
