@@ -1,4 +1,4 @@
-/* HERO */
+
 .hero {
   background: url('blood-banner.jpg') no-repeat center center/cover;
   height: 70vh;
@@ -33,7 +33,6 @@
   background-color: #ffeaea;
 }
 
-/* ABOUT */
 .about {
   padding: 40px;
   background-color: #fff0f0;
@@ -63,7 +62,6 @@
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-/* TESTIMONIAL */
 .testimonial {
   background-color: #fff;
   padding: 40px;
@@ -77,7 +75,6 @@
   color: #444;
 }
 
-/* FOOTER */
 .footer {
   background-color: #ff4c4c;
   color: white;
@@ -91,10 +88,10 @@
 }
 
 .logo img {
-  width: 50px; /* perfect cute size */
+  width: 50px; 
   height: 50px;
   object-fit: cover;
-  border-radius: 50%; /* circle style */
+  border-radius: 50%; 
   border: 2px solid white;
 }
 
@@ -123,9 +120,9 @@
   width: 50px;
   height: 50px;
   object-fit: cover;
-  border-radius: 50%;         /* Circle shape */
+  border-radius: 50%;        
   border: 2px solid white;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);  /* Subtle shadow */
+  box-shadow: 0 0 8px rgba(0,0,0,0.1); 
 }
 
 .logo span {
